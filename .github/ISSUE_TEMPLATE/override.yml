@@ -1,0 +1,83 @@
+name: Override
+description: Log one human override of the agent. Every override is a deletion candidate first and training data second.
+title: "Override: "
+labels:
+  - override
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One override per issue. Fill it while the case is still open. The ladder is in 07-override-ladder.md: resolve at the highest tier that works, and treat tier 4 as unresolved.
+
+  - type: textarea
+    id: agent-did
+    attributes:
+      label: What the agent did
+      description: The output or action, as it happened. Quote it if you can.
+      placeholder: The agent ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: human-did
+    attributes:
+      label: What the human did instead
+      description: The correction, and who made it. A name, not a role.
+      placeholder: "[name] changed it to ..."
+    validations:
+      required: true
+
+  - type: input
+    id: part
+    attributes:
+      label: The part involved
+      description: The step, rule, field, report, role, system, feature, clause, or KPI the override points to. Use the name from 04-parts-inventory.md if it has one.
+      placeholder: e.g. the second approval on the intake form
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Part category
+      description: The category of the part involved, from the seven in 04-parts-inventory.md.
+      options:
+        - Process
+        - Information
+        - Organization
+        - Systems
+        - Offer
+        - Contract
+        - Measurement
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Resolution tier
+      description: Where this override gets resolved. Pick the highest tier that works. Tier 4 is the failure mode, not the safety net.
+      options:
+        - "1 - Structural: change the workflow or data structure so the mistake is impossible"
+        - "2 - Gate or eval: a deterministic check catches it before a human does"
+        - "3 - Playbook rule or skill: a written instruction the agent reads next time"
+        - "4 - Human review: a person will make this correction again"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: deletion
+    attributes:
+      label: Deletion candidate
+      options:
+        - label: This override is a deletion candidate first
+          required: false
+
+  - type: textarea
+    id: owner
+    attributes:
+      label: Owner of the resolution
+      description: Who resolves it, by name, and by when.
+      placeholder: "[name], by [date]"
+
+# Part of The Edge Method · samuelpouyt.com/method
