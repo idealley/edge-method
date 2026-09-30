@@ -6,7 +6,7 @@ One workflow at a time, never the company. This page decides which one. Winnable
 
 ## The selection criteria
 
-Score the candidate against all six. Use the map from step 1 to answer; guesses are not scores.
+Score the candidate against all seven. Use the map from step 1 and the loop hypothesis from step 2 to answer; guesses are not scores.
 
 | Criterion | What it means | Yes / No | Evidence from the map |
 |---|---|---|---|
@@ -16,6 +16,7 @@ Score the candidate against all six. Use the map from step 1 to answer; guesses 
 | Measurable | Cycle time, error rate, and cost can be captured before and after, by the same method, without a project to build the measurement. | | |
 | Reversible | If the edge fails, the old way is still there and nothing irreversible happened to a customer, a contract, or a ledger. | | |
 | Low regulatory exposure | An error in the shadow run is an internal event, not a filing. | | |
+| Has a loop that leaks | Each run teaches the firm something, that learning is lost today, and at least part of it is the firm's alone (step 2). No loop, no build: a workflow that only gets faster is optimization, and a loop a model can read from the inbox is not yours. | | |
 
 Between two candidates that pass, take the one with the higher coordination-to-judgment ratio.
 
@@ -43,6 +44,7 @@ Derived from the criteria, not from a list of industries:
 - Its inputs and outputs already exist in a system somewhere, so before/after can be measured.
 - A wrong output is caught downstream and corrected, not shipped to a regulator.
 - The best case is one to two orders of magnitude, not a percentage.
+- Every run teaches something the firm currently loses, and part of what it teaches is not written anywhere a model could read it.
 
 ## What a bad first workflow looks like
 
@@ -51,14 +53,16 @@ Derived from the criteria, not from a list of industries:
 - Nobody agrees what a correct output is.
 - Errors are irreversible, public, or regulated.
 - The best case is 10 to 20%.
+- Nothing is learned from one run to the next; it is the same work every time, and the only thing on offer is speed.
 - It is the flagship: the one whose owners have the most to defend, in a mature core or an acquired unit where the people have had another life before. The method fails there first, and that is an argument for the edge, not for starting there.
 
 ## Go / no-go
 
 ```
 Workflow: [name]
-Criteria passed: [n] of 6
+Criteria passed: [n] of 7
 10× bar: [passed / failed]
+Loop (from 02): [named and located / none]
 Antibodies drawn on this workflow's map: [count, from 01-map.md]
 Decision: [GO / NO-GO]
 Decided by: [name]     Date: [date]

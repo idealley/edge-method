@@ -24,7 +24,7 @@ The part of the mapped workflow where this shows up first:
 
 ## The learning-loop hypothesis
 
-The exponential question only pays if something compounds. Name the loop: what the firm learns each time the workflow runs, where that learning is stored, and what gets cheaper or better on the next run because of it. If the answer is "in people's heads", there is no loop yet; step 5 will build one.
+The exponential question only pays if something compounds. Name the loop: what the firm learns each time the workflow runs, where that learning is stored, and what gets cheaper or better on the next run because of it. If the answer is "in people's heads", there is no loop yet; step 5 will build one. Then ask what in the loop is yours alone. If everything it learns is already in the inbox and the CRM, a model reads it without you; the loop is worth building only if it holds at least one thing nobody outside the firm could reconstruct.
 
 ```
 Each time [workflow] runs, we learn: [what]
@@ -32,6 +32,8 @@ That learning is stored in: [where, today]
 It makes the next run: [faster / cheaper / more accurate, how]
 It currently leaks because: [what stops it from compounding]
 The loop lives at: [the component on the map where the loop should sit]
+Ours alone: [what in this loop nobody outside the firm, and no model
+reading our mail, could reconstruct]
 ```
 
 ## The CEO mandate
@@ -62,7 +64,7 @@ Signed: [name]     Date: [date]
 ## Before you move on
 
 - The exponential question is answered for this firm, not in general.
-- The learning loop is named, located on the map, and its leak is identified.
+- The learning loop is named, located on the map, its leak is identified, and the part of it that is yours alone is written down.
 - The mandate is signed by the person who controls the budget.
 
 Commit the page. Step 3 picks the one thing.
